@@ -1,0 +1,107 @@
+.header {
+  max-width: 450px;
+
+  .first-header {
+    display: none;
+  }
+
+  // large screen navlinks
+  .main-header {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .header {
+    max-width: 100%;
+
+    .first-header {
+      background: #55425b;
+      padding: 0.4rem 4rem;
+      display: block;
+
+      .content {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 8px;
+        color: #fffefe;
+
+        h3 {
+          font-size: 0.8rem;
+          font-weight: 400;
+          line-height: 30px;
+        }
+        .social-icons {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 7px;
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    .main-header {
+      padding: 0.7rem 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .Nav-links {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        span {
+          border-radius: 50%;
+          border: 1px solid purple;
+          padding: 10px;
+          svg {
+            font-size: 0.9rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+
+        ul {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          list-style: none;
+
+          li {
+            // font-size: 0.9rem;
+            // font-weight: 600;
+            // line-height: 30px;
+            // color: #55425b;
+            // cursor: pointer;
+            // transition: all 0.3s ease-in-out, all border-bottom-color 0.3s;
+            a {
+              position: relative;
+              text-decoration: none;
+              color: purple;
+            }
+
+            a::before {
+              content: "";
+              position: absolute;
+              width: 0;
+              height: 2px;
+              bottom: -2px;
+              left: 0;
+              background-color: #f39c12; /* Change to your desired underline color */
+              transition: width 0.5s ease, left 0.5s ease 5s;
+            }
+
+            a:hover::before {
+              width: 100%;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
