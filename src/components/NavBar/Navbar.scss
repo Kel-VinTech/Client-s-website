@@ -1,5 +1,6 @@
 .header {
   max-width: 450px;
+  color: #fffefe;
 
   .first-header {
     display: none;
@@ -14,6 +15,9 @@
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
   .header {
     max-width: 100%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
 
     .first-header {
       background: #55425b;
@@ -52,6 +56,7 @@
         display: flex;
         align-items: center;
         gap: 1rem;
+        color: #fffefe;
 
         span {
           border-radius: 50%;
@@ -65,41 +70,80 @@
           }
         }
 
-        ul {
+        .header-links {
           display: flex;
           align-items: center;
           gap: 1rem;
           list-style: none;
+          color: #fffefe;
 
-          li {
-            // font-size: 0.9rem;
-            // font-weight: 600;
-            // line-height: 30px;
-            // color: #55425b;
-            // cursor: pointer;
-            // transition: all 0.3s ease-in-out, all border-bottom-color 0.3s;
-            a {
-              position: relative;
-              text-decoration: none;
-              color: purple;
-            }
+          // li {
+          //   // font-size: 0.9rem;
+          //   // font-weight: 600;
+          //   // line-height: 30px;
+          //   // color: #55425b;
+          //   // cursor: pointer;
+          //   // transition: all 0.3s ease-in-out, all border-bottom-color 0.3s;
+          //   a {
+          //     position: relative;
+          //     text-decoration: none;
+          //     color: purple;
+          //   }
 
-            a::before {
-              content: "";
-              position: absolute;
-              width: 0;
-              height: 2px;
-              bottom: -2px;
-              left: 0;
-              background-color: #f39c12; /* Change to your desired underline color */
-              transition: width 0.5s ease, left 0.5s ease 5s;
-            }
+          //   a::before {
+          //     content: "";
+          //     position: absolute;
+          //     width: 0;
+          //     height: 2px;
+          //     bottom: -2px;
+          //     left: 0;
+          //     background-color: #f39c12; /* Change to your desired underline color */
+          //     transition: width 0.5s ease, left 0.5s ease 5s;
+          //   }
 
-            a:hover::before {
-              width: 100%;
-              left: 0;
-            }
-          }
+          //   a:hover::before {
+          //     width: 100%;
+          //     left: 0;
+          //   }
+          // }
+        }
+
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+
+        .link {
+          color: blue;
+          text-decoration: none;
+        }
+
+        .link.hovered {
+          text-decoration: underline;
+        }
+
+        .dropdown-menu {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background-color: white;
+          border: 1px solid gray;
+          padding: 10px;
+        }
+
+        .dropdown-menu ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+
+        .dropdown-menu li {
+          padding: 5px 0;
+          cursor: pointer;
+        }
+
+        .selected-option {
+          margin-top: 10px;
         }
       }
     }

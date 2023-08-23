@@ -1,0 +1,48 @@
+.home-banner {
+  background: url(../src/assets/img/Optimized-pexels-cottonbro-studio-4065145.jpg)
+    no-repeat center center/cover;
+  min-height: 100vh;
+  max-width: 100%;
+  width: 100%;
+  z-index: -1;
+  position: relative;
+  background-blend-mode: darken; /* This darkens the background */
+  animation: scaleBackground 2s ease-in-out;
+
+  @keyframes scaleBackground {
+    0% {
+      transform: scale(1.1);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  // home-text
+
+  .home-text {
+    padding: 23% 0;
+    color: #fff;
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      line-height: 24px;
+    }
+    h2 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      line-height: 55px;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 34px;
+      max-width: 50%;
+      padding-bottom: 1rem;
+    }
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+}

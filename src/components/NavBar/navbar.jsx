@@ -1,6 +1,7 @@
 import "./Navbar.scss"
 import {BiLogoFacebook,BiLogoLinkedin,BiLogoTwitter,BiSearch} from "react-icons/bi"
 import {Link} from "react-router-dom"
+// import { useState } from "react"
 
 const NavBar = () => {
     return (
@@ -24,8 +25,9 @@ const NavBar = () => {
                     </div>
 
                     <div className="Nav-links">
-                        <ul>
-                            <li><Link to="#">About Us</Link></li>
+                        <ul className="header-links">
+                            <li><Link to="#">Hello
+                            </Link></li>
                             <li><Link to="#">Services</Link></li>
                             <li><Link to="#">Contact Us</Link></li>
                             <li><Link to="#">Careers</Link></li>
@@ -40,5 +42,56 @@ const NavBar = () => {
 }
 
 export default NavBar
+
+
+
+// const DropdownMenu = () => {
+//   const [isHovered, setIsHovered] = useState(false);
+//   const [selectedOption, setSelectedOption] = useState('');
+
+//   const handleMouseEnter = () => {
+//     setIsHovered(true);
+//   };
+
+//   const handleMouseLeave = () => {
+//     setIsHovered(false);
+//   };
+
+//   const handleOptionClick = (option) => {
+//     setSelectedOption(option);
+//   };
+
+//   return (
+//     <div className="dropdown" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+//       <a href="#" className={`link ${isHovered ? 'hovered' : ''}`}>
+//         Hover Me
+//       </a>
+//       {isHovered && (
+//         <div className="dropdown-menu">
+//           <ul>
+//             <li onClick={() => handleOptionClick('Option 1')}>Option 1</li>
+//             <li onClick={() => handleOptionClick('Option 2')}>Option 2</li>
+//             <li onClick={() => handleOptionClick('Option 3')}>Option 3</li>
+//           </ul>
+//         </div>
+//       )}
+//       {selectedOption && (
+//         <div className="selected-option">
+//           Selected Option: {selectedOption}
+//         </div>
+//       )}
+//     </div>
+//   );
+// };
+
+
+
+
+
+
+
+
+
+
 
 
