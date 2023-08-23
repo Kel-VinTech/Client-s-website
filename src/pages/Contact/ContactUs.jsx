@@ -119,8 +119,8 @@ const ContactUs = () => {
 
             
 
-                    <section className="contact-service row">
-                        <div className="contact-service-content">
+                    <section className="contact-service">
+                        <div className="contact-service-content row">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eligendi voluptatibus cum! Iure facilis possimus laborum iste repellat, tenetur quod?</p>
                         </div>
 
