@@ -1,2 +1,2 @@
 export { default as Home} from "./Home/Homepage";
-// export { default as AboutUs} from "./AboutUs/aboutUs";
+export { default as Contact} from "./Contact/ContactUs";

@@ -1,0 +1,128 @@
+main {
+  .contact-banner {
+    min-height: 100vh;
+    max-width: 100%;
+    width: 100%;
+    z-index: -1;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../src/assets/img/Optimized-pexels-cottonbro-studio-4065145.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    animation: scaleBackground 2s ease-in-out;
+
+    @keyframes scaleBackground {
+      0% {
+        transform: scale(1.1);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    // home-text
+
+    .contact-content {
+      padding: 15% 0;
+      color: #fff;
+      .contact-text {
+        h2 {
+          font-size: 3.5rem;
+          font-weight: 700;
+          line-height: 55px;
+        }
+        p {
+          font-size: 1.1rem;
+          font-weight: 400;
+          line-height: 36px;
+          max-width: 50%;
+        }
+      }
+    }
+  }
+  .contact-box {
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    top: -20vh;
+
+    // padding: 4rem 0;
+
+    .box-content {
+      max-width: 1500px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 1rem 10rem;
+
+      // grid-template-columns: repeat(2, 1fr);
+      // grid-template-rows: 1fr;
+
+      .box {
+        padding: 2rem 4rem;
+        box-shadow: -9px 10px 13px -7px rgba(0, 0, 0, 0.38);
+      }
+
+      .box1 {
+        width: 52%;
+        width: 100%;
+        background: #fff;
+
+        h2 {
+          font-size: 1.3rem;
+          font-weight: 700;
+          line-height: 33px;
+          color: #171b27;
+        }
+      }
+      .box2 {
+        width: 48%;
+        background: #7c6288;
+
+        h2 {
+          font-size: 1.3rem;
+          font-weight: 700;
+          line-height: 33px;
+          color: #fff;
+          padding: 1.5rem 0;
+        }
+        .box-2-details {
+          > div {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+
+            span {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              flex-direction: column;
+            }
+          }
+          p {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 30px;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .contact-service {
+    padding: 2rem 0;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+//   media screen large
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+}
