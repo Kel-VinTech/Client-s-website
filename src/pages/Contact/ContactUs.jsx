@@ -76,44 +76,29 @@ const ContactUs = () => {
                                 <h2>Our Contact Details</h2>
                                 
 
-
-
-
-
-
                                 <div className="box-2-details">
-                                    {/* <span>
-                                        <div>
-                                           
-                                            
-                                        </div>
-                                        <span>
-                                            
-                                            
-                                        </span>
-                                    </span> */}
-
-                                    <div>
-                                        <a href="">a</a>
-                                        <p>The Studio
-                                            <span>
-                                            <p>44 Southport Drive</p>
-                                            <p>44 Southport Drive</p>
-                                            </span>
-                                        </p>
-                                        <div className="div">
-                                        
-                                        </div>
-                                    </div>
+                                
+                                <span>
+                                    <a href="">b</a>
+                                <p>
+                                The Studio
+                                <p>44 Southport Drive</p>
+                                    <p>Walney Island</p>
+                                    <p>Barrow-In-Furness</p>
+                                    <p>England</p>
+                                    <p>LA14 3LT</p>
                                     
-                                    <div>
+                                </p>         
+                                </span>
+                                    
+                                    <span>
                                         <LuPhoneCall/>
-                                        <p>07494 748165</p>
-                                    </div>
-                                    <div>
+                                        <h3>07494 748165</h3>
+                                    </span>
+                                    <span>
                                         <IoMailOpenOutline/>
-                                        <p>hello@philcollierassociates.com</p>
-                                    </div>
+                                        <h3>hello@philcollierassociates.com</h3>
+                                    </span>
                                 </div>
                             </div>
                         </div>
