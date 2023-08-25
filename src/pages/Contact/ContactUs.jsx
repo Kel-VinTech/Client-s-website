@@ -3,6 +3,8 @@ import {motion} from "framer-motion";
 import {BiLogoFacebook,BiLogoLinkedin,BiLogoTwitter} from "react-icons/bi"
 import {IoMailOpenOutline} from "react-icons/io5"
 import {LuPhoneCall} from "react-icons/lu"
+import {SlScreenSmartphone} from "react-icons/sl"
+import {PiMapPinLight} from "react-icons/pi"
 
 const ContactUs = () => {
     // animations for the home-banner text
@@ -79,7 +81,7 @@ const ContactUs = () => {
                                 <div className="box-2-details">
                                 
                                 <span>
-                                    <a href="">b</a>
+                                    <PiMapPinLight/>
                                 <p>
                                 The Studio
                                 <p>44 Southport Drive</p>
@@ -92,7 +94,7 @@ const ContactUs = () => {
                                 </span>
                                     
                                     <span>
-                                        <LuPhoneCall/>
+                                        <SlScreenSmartphone/>
                                         <h3>07494 748165</h3>
                                     </span>
                                     <span>
