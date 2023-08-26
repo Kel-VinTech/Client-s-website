@@ -25,47 +25,40 @@ main {
     // home-text
 
     .contact-content {
-      padding: 15% 0;
+      padding: 40% 0;
       color: #fff;
+
       .contact-text {
         h2 {
-          font-size: 3.5rem;
+          font-size: 2.5rem;
           font-weight: 700;
           line-height: 55px;
         }
         p {
-          font-size: 1.1rem;
+          font-size: 1rem;
           font-weight: 400;
-          line-height: 36px;
-          max-width: 50%;
+          line-height: 30px;
+          max-width: 95%;
         }
       }
     }
   }
   .contact-box {
-    //   display: flex;
-    //   justify-content: center;
-    //   align-items: center;
     width: 100%;
     z-index: 1;
     position: relative;
-    top: -20vh;
-
-    // padding: 4rem 0;
+    padding-top: 2rem;
 
     .box-content {
-      max-width: 1500px;
+      max-width: 600px;
       width: 100%;
       display: flex;
+      flex-direction: column;
       justify-content: center;
-      padding: 1rem 10rem;
-
-      // grid-template-columns: repeat(2, 1fr);
-      // grid-template-rows: 1fr;
+      padding: 2rem 1.3rem;
 
       .box {
-        padding: 2rem 4rem;
-        box-shadow: -9px 10px 13px -7px rgba(0, 0, 0, 0.38);
+        padding: 2rem 1rem;
       }
 
       svg {
@@ -88,7 +81,6 @@ main {
       }
 
       .box1 {
-        width: 52%;
         width: 100%;
         background: #fff;
 
@@ -100,7 +92,7 @@ main {
         }
       }
       .box2 {
-        width: 48%;
+        width: 100%;
         background: #7c6288;
 
         h2 {
@@ -151,4 +143,133 @@ main {
 
 //   media screen large
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
+  main {
+    .contact-banner {
+      // home-text
+
+      .contact-content {
+        padding: 15% 0;
+        color: #fff;
+        .contact-text {
+          h2 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 55px;
+          }
+          p {
+            font-size: 1.1rem;
+            font-weight: 400;
+            line-height: 36px;
+            max-width: 50%;
+          }
+        }
+      }
+    }
+    .contact-box {
+      //   display: flex;
+      //   justify-content: center;
+      //   align-items: center;
+      width: 100%;
+      z-index: 1;
+      position: relative;
+      top: -20vh;
+
+      // padding: 4rem 0;
+
+      .box-content {
+        max-width: 1500px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding: 1rem 10rem;
+
+        // grid-template-columns: repeat(2, 1fr);
+        // grid-template-rows: 1fr;
+
+        .box {
+          padding: 2rem 4rem;
+          box-shadow: -9px 10px 13px -7px rgba(0, 0, 0, 0.38);
+        }
+
+        svg {
+          font-size: 1.3rem;
+          color: #b6a9bc;
+        }
+
+        .contact-social-media {
+          display: flex;
+          gap: 20px;
+          padding: 1rem 0;
+
+          svg {
+            font-size: 1.3rem;
+          }
+
+          svg:hover {
+            color: #fff;
+          }
+        }
+
+        .box1 {
+          width: 52%;
+          width: 100%;
+          background: #fff;
+
+          h2 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            line-height: 33px;
+            color: #171b27;
+          }
+        }
+        .box2 {
+          width: 48%;
+          background: #7c6288;
+
+          h2 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            line-height: 33px;
+            color: #fff;
+            padding: 1.5rem 0;
+          }
+          h3 {
+            font-weight: 600;
+            color: #fff;
+            font-size: 1.1rem;
+            padding: 1rem 0;
+          }
+          .box-2-details {
+            > div {
+              display: flex;
+              justify-content: flex-start;
+              align-items: flex-start;
+              text-align: left;
+              gap: 1rem;
+            }
+            span {
+              display: flex;
+              justify-content: flex-start;
+              align-items: first baseline;
+              text-align: left;
+              gap: 1rem;
+            }
+            p {
+              font-size: 1.1rem;
+              font-weight: 400;
+              line-height: 40px;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    .contact-service {
+      padding: 2rem 0;
+      position: relative;
+      z-index: 1;
+    }
+  }
 }
