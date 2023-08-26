@@ -69,8 +69,22 @@ main {
       }
 
       svg {
-        font-size: 1.2rem;
-        color: #fff;
+        font-size: 1.3rem;
+        color: #b6a9bc;
+      }
+
+      .contact-social-media {
+        display: flex;
+        gap: 20px;
+        padding: 1rem 0;
+
+        svg {
+          font-size: 1.3rem;
+        }
+
+        svg:hover {
+          color: #fff;
+        }
       }
 
       .box1 {

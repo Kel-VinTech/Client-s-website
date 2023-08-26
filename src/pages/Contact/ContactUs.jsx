@@ -2,9 +2,9 @@ import "../Contact/Contact.scss"
 import {motion} from "framer-motion";
 import {BiLogoFacebook,BiLogoLinkedin,BiLogoTwitter} from "react-icons/bi"
 import {IoMailOpenOutline} from "react-icons/io5"
-import {LuPhoneCall} from "react-icons/lu"
 import {SlScreenSmartphone} from "react-icons/sl"
 import {PiMapPinLight} from "react-icons/pi"
+import { Link } from "react-router-dom";
 
 const ContactUs = () => {
     // animations for the home-banner text
@@ -102,9 +102,22 @@ const ContactUs = () => {
                                         <h3>hello@philcollierassociates.com</h3>
                                     </span>
                                 </div>
+                                {/* social links */}
+                                <div className="contact-social-media">
+                                    <span><Link to="#"><BiLogoFacebook/></Link></span>
+                                    <span><Link to="facebook.com"><BiLogoTwitter/></Link></span>
+                                    <span><Link to="facebook.com"><BiLogoLinkedin/></Link></span>
+                        
+                                </div>
                             </div>
+
+                            
                         </div>
-                    </div>
+            </div>
+
+           
+
+            
 
                     <section className="contact-service row">
                         <div className="contact-service-content">
