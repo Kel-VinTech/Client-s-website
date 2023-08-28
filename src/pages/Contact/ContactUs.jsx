@@ -120,8 +120,11 @@ const ContactUs = () => {
             
 
                     <section className="contact-service">
-                        <div className="contact-service-content row">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eligendi voluptatibus cum! Iure facilis possimus laborum iste repellat, tenetur quod?</p>
+                        <div className="contact-service-content">
+                            <div className="contact-service-text row">
+                                <h2>Delivering helpful HR advice. Straight to your inbox.</h2>
+                                <p>Get the latest news & tips that matter most to your business in the <br/> PCA monthly newsletter.</p>
+                            </div>
                         </div>
 
                     </section>
