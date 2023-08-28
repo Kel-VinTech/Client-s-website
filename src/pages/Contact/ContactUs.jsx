@@ -122,8 +122,16 @@ const ContactUs = () => {
                     <section className="contact-service">
                         <div className="contact-service-content">
                             <div className="contact-service-text row">
-                                <h2>Delivering helpful HR advice. Straight to your inbox.</h2>
-                                <p>Get the latest news & tips that matter most to your business in the <br/> PCA monthly newsletter.</p>
+                                <motion.h2
+                                variants={container}
+                                initial="hidden"
+                                animate="show"
+                                >Delivering helpful HR advice. Straight to your inbox.</motion.h2>
+                                <motion.p
+                                variants={container}
+                                initial="hidden"
+                                animate="show2"
+                                >Get the latest news & tips that matter most to your business in the PCA monthly newsletter.</motion.p>
                             </div>
                         </div>
 

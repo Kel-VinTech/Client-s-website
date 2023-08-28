@@ -148,25 +148,36 @@ main {
     background-position: center center;
     background-size: cover;
     margin-bottom: 4rem;
+    animation: scaleBackground 2s ease-in-out;
+
+    @keyframes scaleBackground {
+      0% {
+        transform: scale(1.1);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
 
     .contact-service-content {
-      padding: 20vh 0;
+      padding: 18vh 0;
       color: #fff;
 
       .contact-service-text {
-        padding: 0 4rem;
-        width: 48%;
+        padding: 0 1.1rem;
+        width: 100%;
 
         h2 {
-          font-size: 2.7rem;
+          font-size: 2.3rem;
           font-weight: 700;
           line-height: 55px;
           padding-bottom: 2rem;
         }
         p {
-          font-size: 1.05rem;
+          font-size: 0.97rem;
           font-weight: 400;
-          line-height: 30px;
+          line-height: 25px;
         }
       }
     }
@@ -299,9 +310,40 @@ main {
     }
 
     .contact-service {
-      padding: 2rem 0;
       position: relative;
       z-index: 1;
+      max-width: 100%;
+      min-height: 50vh;
+      background-image: linear-gradient(
+          rgba(29, 28, 28, 0.322),
+          rgba(29, 28, 28, 0.322)
+        ),
+        url("../src/assets/img/pexels-karolina-grabowska-4476610.jpg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      margin-bottom: 4rem;
+      .contact-service-content {
+        padding: 26vh 0;
+        color: #fff;
+
+        .contact-service-text {
+          padding: 0 4rem;
+          width: 46%;
+
+          h2 {
+            font-size: 2.7rem;
+            font-weight: 700;
+            line-height: 55px;
+            padding-bottom: 2rem;
+          }
+          p {
+            font-size: 1.05rem;
+            font-weight: 400;
+            line-height: 30px;
+          }
+        }
+      }
     }
   }
 }
