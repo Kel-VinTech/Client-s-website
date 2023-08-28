@@ -69,11 +69,17 @@ const ContactUs = () => {
                 </div>
                 
             </section>
+
             <div className="contact-box">
                         <div className="box-content row">
+
+
+
                             <div className="box1 box">
                                 <h2>Make An Enquiry</h2>
                             </div>
+
+
                             <div className="box2 box">
                                 <h2>Our Contact Details</h2>
                                 
@@ -135,7 +141,7 @@ const ContactUs = () => {
                             </div>
                         </div>
 
-                    </section>
+                </section>
         </main>
     )
 }
