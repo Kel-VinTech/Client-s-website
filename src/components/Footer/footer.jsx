@@ -20,7 +20,7 @@ const Footer = () => {
                         <h2>Explore PCA</h2>
                         <Link>AboutUs</Link>
                         <Link>Services</Link>
-                        <Link>Contact Us</Link>
+                        <Link to="/contact">Contact Us</Link>
                         <Link>Careers</Link>
                         <Link>Blog</Link>
 
