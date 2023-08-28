@@ -4,13 +4,11 @@ main {
     max-width: 100%;
     width: 100%;
     z-index: -1;
-    // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    //   url("../src/assets/img/Optimized-pexels-cottonbro-studio-4065145.jpg");
-    background: url(../src/assets/img/Optimized-pexels-cottonbro-studio-4065145.jpg),
-      no-repeat center center/cover;
-    // background-repeat: no-repeat;
-    // background-position: center center;
-    // background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../src/assets/img/Optimized-pexels-cottonbro-studio-4065145.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     animation: scaleBackground 2s ease-in-out;
 
     @keyframes scaleBackground {
