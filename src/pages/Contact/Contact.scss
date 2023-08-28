@@ -7,10 +7,11 @@ main {
     position: relative;
     // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     //   url("../src/assets/img/Optimized-pexels-cottonbro-studio-4065145.jpg");
-    background-image: url("../src/assets/img/Optimized-pexels-cottonbro-studio-4065145.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    background: url(../assets/img/Optimized-pexels-cottonbro-studio-4065145.jpg),
+      no-repeat center center/cover;
+    // background-repeat: no-repeat;
+    // background-position: center center;
+    // background-size: cover;
     animation: scaleBackground 2s ease-in-out;
 
     @keyframes scaleBackground {
