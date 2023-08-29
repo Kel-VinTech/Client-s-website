@@ -1,0 +1,166 @@
+main {
+  .career-main {
+    background: #f3f4fa;
+
+    .career-section {
+      position: relative;
+      width: 100%;
+      height: 85vh;
+      overflow: hidden;
+      .career-banner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 150%; /* Adjust as needed */
+        height: 95%;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("../img/Optimized-pexels-cottonbro-studio-4065145.jpg");
+        background-position: center center;
+        background-repeat: repeat-x;
+        animation: slideBackground 20s linear infinite; /* Adjust animation duration as needed */
+
+        @keyframes slideBackground {
+          0% {
+            background-position: 0 0;
+          }
+          100% {
+            background-position: 100% 0;
+          }
+        }
+      }
+
+      .career-content {
+        padding: 10% 0;
+        color: #fff;
+
+        h2 {
+          font-size: 2.7rem;
+          font-weight: 700;
+          line-height: 50px;
+          padding-bottom: 1.5rem;
+        }
+
+        h3 {
+          padding: 1.3rem 0;
+          font-size: 1rem;
+          font-weight: 800;
+          line-height: 50px;
+        }
+        p {
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 30px;
+          width: 27%;
+        }
+        .career-banner-button {
+          background: #fff;
+          width: 18%;
+          padding: 0.2rem;
+          border-radius: 25px;
+
+          span {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            input {
+              padding: 0.6rem 0.7rem;
+              outline: none;
+              border: none;
+
+              background: none;
+              width: 65%;
+
+              &::placeholder {
+                color: #888686a6;
+              }
+            }
+            a {
+              background: #7d6388;
+              padding: 0.6rem;
+              border-radius: 25px;
+              font-weight: 600;
+              font-size: 0.9rem;
+              color: #fff;
+
+              &:hover {
+                background: #143e8e;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .career-section-2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4rem 0;
+      .career-content-2 {
+        background: #fff;
+        box-shadow: -9px 10px 13px -13px rgba(0, 0, 0, 0.38);
+        padding: 2rem 2rem;
+        width: 700px;
+
+        .content {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          h2 {
+            color: #171b27;
+            font-size: 600;
+            font-size: 1.3rem;
+            line-height: 38px;
+          }
+          p {
+            color: #c8cdda;
+            font-size: 0.9rem;
+            font-weight: 400;
+            line-height: 27px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  main {
+    .career-main {
+      .career-section {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        .career-banner {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 150%; /* Adjust as needed */
+          height: 95%;
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0.5),
+              rgba(0, 0, 0, 0.5)
+            ),
+            url("../img/Optimized-pexels-cottonbro-studio-4065145.jpg");
+          background-position: center center;
+          background-repeat: repeat-x;
+          animation: slideBackground 20s linear infinite; /* Adjust animation duration as needed */
+        }
+
+        @keyframes slideBackground {
+          0% {
+            background-position: 100% 0;
+          }
+          100% {
+            background-position: 0 0;
+          }
+        }
+      }
+    }
+  }
+}

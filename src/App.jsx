@@ -2,7 +2,7 @@ import { } from 'react'
 
 import { NavBar,Footer} from "../src/components"
 
-import {Home,Contact} from "../src/pages"
+import {Home,Contact,Career} from "../src/pages"
 import { Route, Routes} from "react-router-dom"
 
 import './App.scss'
@@ -15,6 +15,7 @@ function App() {
     <Routes>
           <Route path='/' element={<Home />}/>
           <Route path='/contact' element={<Contact/>}/>
+          <Route path='/career' element={<Career/>}/>
         </Routes>
     <Footer/>
     </div>

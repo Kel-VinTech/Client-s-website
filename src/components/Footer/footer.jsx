@@ -5,6 +5,7 @@ import {BiLogoFacebook,BiLogoLinkedin,BiLogoTwitter} from "react-icons/bi"
 import {IoMailOpenOutline} from "react-icons/io5"
 import {LuPhoneCall} from "react-icons/lu"
 
+
 const Footer = () => {
     return (
         <section className="">
@@ -21,7 +22,7 @@ const Footer = () => {
                         <Link>AboutUs</Link>
                         <Link>Services</Link>
                         <Link to="/contact">Contact Us</Link>
-                        <Link>Careers</Link>
+                        <Link to="/career">Careers</Link>
                         <Link>Blog</Link>
 
                     </div>

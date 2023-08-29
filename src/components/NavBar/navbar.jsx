@@ -30,7 +30,7 @@ const NavBar = () => {
                             </Link></li>
                             <li><Link to="#">Services</Link></li>
                             <li><Link to="/contact">Contact Us</Link></li>
-                            <li><Link to="#">Careers</Link></li>
+                            <li><Link to="/career">Careers</Link></li>
                             <li><Link to="#">Blog</Link></li>
                         </ul>
                         <span><BiSearch/></span>
