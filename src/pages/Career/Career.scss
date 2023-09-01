@@ -123,13 +123,22 @@ main {
             line-height: 27px;
           }
 
-          span {
+          .link {
+            display: flex;
+
+            align-items: center;
+            background: #7d6388;
+            color: #fff;
+            border-radius: 6px;
+            padding: 0.8rem 1rem;
+
             a {
-              background: #7d6388;
               font-size: 0.8rem;
               font-weight: 600;
               color: #fff;
-              padding: 0.8rem 1rem;
+            }
+
+            svg {
             }
           }
         }
