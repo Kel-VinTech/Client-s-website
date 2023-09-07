@@ -2,14 +2,11 @@ import "../Career/Career.scss"
 import {motion} from "framer-motion";
 import {Link} from "react-router-dom"
 import {BsArrowRight} from "react-icons/bs"
-import {MdOutlineKeyboardArrowRight} from "react-icons/md"
+// import {MdOutlineKeyboardArrowRight} from "react-icons/md"
 
 const Career = () =>{
 
-    const iconVariants = {
-        initial: { opacity: 0 },
-        hover: { opacity: 1 },
-      };
+
 
     return(
         <main>
@@ -48,10 +45,8 @@ const Career = () =>{
                                     <Link to="#">
                                         
                                     Hello
+                                
                                     <motion.div >
-                                        <MdOutlineKeyboardArrowRight/> 
-                                    </motion.div>
-                                    <motion.div variants={iconVariants}>
                                          <BsArrowRight/>
                                     </motion.div>
                                     </Link>
