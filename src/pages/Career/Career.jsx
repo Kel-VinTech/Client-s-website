@@ -37,14 +37,10 @@ const Career = () =>{
                                 <p>Lake District Farmers</p>
                             </span>
                             <span className="link"> 
-                                <motion.div 
-                                to=""
-                                whileHover="hover"
-                                initial="initial"     
-                                >
+                                <motion.div>
                                     <Link to="#">
                                         
-                                    Hello
+                                   View Opening
                                 
                                     <motion.div >
                                          <BsArrowRight/>
