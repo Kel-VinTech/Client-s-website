@@ -57,7 +57,7 @@ main {
         }
         .career-banner-button {
           background: #fff;
-          width: 18%;
+          width: 65%;
           padding: 0.2rem;
           border-radius: 25px;
 
@@ -79,7 +79,7 @@ main {
             }
             a {
               background: #7d6388;
-              padding: 0.6rem;
+              padding: 0.7rem;
               border-radius: 25px;
               font-weight: 600;
               font-size: 0.9rem;
@@ -186,6 +186,63 @@ main {
           }
           100% {
             background-position: 0 0;
+          }
+        }
+      }
+
+      .career-section-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 0;
+        .career-content-2 {
+          background: #fff;
+          box-shadow: -9px 7px 10px -13px rgba(0, 0, 0, 0.38);
+          padding: 2rem 2rem;
+          width: 800px;
+
+          .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h2 {
+              color: #171b27;
+              font-size: 600;
+              font-size: 1.3rem;
+              line-height: 38px;
+            }
+            p {
+              color: #c8cdda;
+              font-size: 0.9rem;
+              font-weight: 400;
+              line-height: 27px;
+            }
+
+            .link {
+              display: flex;
+
+              align-items: center;
+              background: #7d6388;
+              color: #fff;
+              border-radius: 6px;
+              padding: 0.9rem 1.3rem;
+
+              div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                a {
+                  display: flex;
+                  align-items: center;
+                  gap: 10px;
+                  font-size: 0.8rem;
+                  font-weight: 600;
+                  color: #fff;
+                }
+              }
+            }
           }
         }
       }
