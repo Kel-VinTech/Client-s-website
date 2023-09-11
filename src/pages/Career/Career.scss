@@ -159,6 +159,11 @@ main {
   }
 }
 
+// 500px>
+
+@media screen and (min-width: 550px) and (max-width: 1024px) {
+}
+
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
   main {
     .career-main {
