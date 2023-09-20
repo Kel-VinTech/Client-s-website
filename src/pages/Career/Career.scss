@@ -12,7 +12,7 @@ main {
         top: 0;
         left: 0;
         width: 150%; /* Adjust as needed */
-        height: 96%;
+        height: 98%;
         background-image: linear-gradient(
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)
@@ -33,7 +33,7 @@ main {
       }
 
       .career-content {
-        padding: 10% 0;
+        padding: 27% 0;
         color: #fff;
 
         h2 {
@@ -174,7 +174,7 @@ main {
           top: 0;
           left: 0;
           width: 150%; /* Adjust as needed */
-          height: 95%;
+          height: 70%;
           background-image: linear-gradient(
               rgba(0, 0, 0, 0.5),
               rgba(0, 0, 0, 0.5)
@@ -287,6 +287,10 @@ main {
           100% {
             background-position: 0 0;
           }
+        }
+        .career-content {
+          padding: 10% 0;
+          color: #fff;
         }
       }
 
