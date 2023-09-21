@@ -259,6 +259,8 @@ main {
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
   main {
     .career-main {
+      background: #f3f4fa;
+
       .career-section {
         position: relative;
         width: 100%;
@@ -278,28 +280,78 @@ main {
           background-position: center center;
           background-repeat: repeat-x;
           animation: slideBackground 20s linear infinite; /* Adjust animation duration as needed */
+
+          @keyframes slideBackground {
+            0% {
+              background-position: 100% 0;
+            }
+            100% {
+              background-position: 0% 0;
+            }
+          }
         }
 
-        @keyframes slideBackground {
-          0% {
-            background-position: 100% 0;
-          }
-          100% {
-            background-position: 0 0;
-          }
-        }
         .career-content {
           padding: 10% 0;
-          color: #fff;
 
+          h2 {
+            font-size: 2.7rem;
+            font-weight: 700;
+            line-height: 50px;
+            padding-bottom: 2rem;
+          }
+
+          h3 {
+            padding: 1.3rem 0;
+            font-size: 1rem;
+            font-weight: 800;
+            line-height: 50px;
+          }
+          p {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 40px;
+            width: 25%;
+          }
           .career-banner-button {
             width: 20%;
+
+            span {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              input {
+                padding: 0.6rem 0.7rem;
+                outline: none;
+                border: none;
+
+                background: none;
+                width: 65%;
+
+                &::placeholder {
+                  color: #888686a6;
+                }
+              }
+              a {
+                background: #7d6388;
+                padding: 0.7rem;
+                border-radius: 25px;
+                font-weight: 600;
+                font-size: 0.9rem;
+                color: #fff;
+
+                &:hover {
+                  background: #143e8e;
+                }
+              }
+            }
           }
         }
       }
 
       .career-section-2 {
         display: flex;
+
         justify-content: center;
         align-items: center;
         padding: 4rem 0;
@@ -307,13 +359,14 @@ main {
           background: #fff;
           box-shadow: -9px 7px 10px -13px rgba(0, 0, 0, 0.38);
           padding: 2rem 2rem;
-          width: 800px;
+          width: 350px;
 
           .content {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
-            flex-direction: row;
+            flex-direction: column;
+            gap: 20px;
 
             h2 {
               color: #171b27;
@@ -350,6 +403,9 @@ main {
                   font-weight: 600;
                   color: #fff;
                 }
+              }
+
+              svg {
               }
             }
           }
